@@ -1,0 +1,33 @@
+{
+  "name": "genpark-immutable-double-entry-ledger-kernel-skill",
+  "version": "1.0.0",
+  "description": "Cryptographic double-entry bookkeeping engine enforcing sum(Debits) == sum(Credits) invariants and hash-chained audit trails.",
+  "category": "Service",
+  "author": "AlphaPark",
+  "tags": [
+    "double-entry-ledger",
+    "accounting",
+    "fintech",
+    "audit-trail",
+    "zero-dependency",
+    "mcp"
+  ],
+  "tools": [
+    {
+      "name": "post_journal_entry",
+      "description": "Post atomic multi-leg journal entry enforcing Debits == Credits."
+    },
+    {
+      "name": "compute_trial_balance",
+      "description": "Calculate account balances and verify net zero system balance."
+    },
+    {
+      "name": "verify_ledger_integrity",
+      "description": "Verify cryptographic hash chain integrity of all ledger entries."
+    },
+    {
+      "name": "run_benchmark_ledger_kernel",
+      "description": "Run double-entry ledger benchmark."
+    }
+  ]
+}
